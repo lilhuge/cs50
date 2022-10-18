@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Company Name</th>
+                <th>Shares Owned</th>
+                <th>Latest Price</th>
+                <th>Total Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows%}
+            <tr class = "body_row">
+                <td>{{row['symbol'].upper()}}</td>
+                <td>{{row['company']}}</td>
+                <td>{{row['shares']}}</td>
+                <td>{{row['price']}}</td>
+                <td class = "value">{{row['fvalue']}}</td>
+            </tr>
+            {% endfor %}
+            <tr class = "body_row">
+                <td>CASH</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class = "value">{{cash}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class = "value">{{grand_total}}</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+{% endblock %}

@@ -1,0 +1,1 @@
+SELECT title FROM movies WHERE year == "2008" --write a SQL query to list the titles of all movies released in 2008

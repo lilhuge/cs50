@@ -1,0 +1,52 @@
+.nav
+{
+    background: #0AA371;
+}
+
+.nav-link
+{
+    color: #E6E6E6;
+}
+
+.active
+{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.nav-link:hover
+{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.fampic
+{
+    width: 100%;
+    height: auto;
+}
+
+.buttons
+{
+    padding: 0px 10px 0px 10px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.famintro
+{
+    text-align: center;
+    font-size: large;
+    font: ariel;
+}
+
+.fambio
+{
+    visibility: hidden;
+    font-size: medium;
+    text-align: center;
+    font: ariel;
+}
+

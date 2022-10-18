@@ -1,0 +1,1 @@
+select title from movies where year > 2017 order by title--write a SQL query to list the titles of all movies with a release date on or after 2018, in alphabetical order
